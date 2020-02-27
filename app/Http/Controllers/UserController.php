@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -28,10 +29,10 @@ class UserController extends Controller
             'password' => 'required|string|min:6|confirmed',
         ]);
 
-        $user->update(
-            ['name' => $request['name'],
-             'password' => bcrypt($request['password'])
-        ]);
+        $userteste = User::find(Auth::user()->id);
+        $userteste->name = $request['name'];
+        $userteste->password = bcrypt($request['password']);
+        $userteste->update();
 
         return redirect()->route('home');
     }
