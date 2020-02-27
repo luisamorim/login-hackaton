@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cfc963f-f2ca-4255-bd44-5dbb12c9990d" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/login-hackaton.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/login-hackaton.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+>>>>>>> 99887486c75ac2f456ce8fe799ba21fd00fddbff
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +18,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
+<<<<<<< HEAD
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+=======
+>>>>>>> 99887486c75ac2f456ce8fe799ba21fd00fddbff
     <execution>
       <executable />
     </execution>
@@ -135,4 +144,18 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+<<<<<<< HEAD
 </project>
+=======
+  <component name="WindowStateProjectService">
+    <state x="2102" y="105" width="1536" height="894" key="MergeDialog" timestamp="1582829993093">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2102" y="105" width="1536" height="894" key="MergeDialog/1920.0.1920.1080/67.27.1853.1053@1920.0.1920.1080" timestamp="1582829993093" />
+    <state x="2585" y="270" width="580" height="564" key="MultipleFileMergeDialog" timestamp="1582829993095">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2585" y="270" width="580" height="564" key="MultipleFileMergeDialog/1920.0.1920.1080/67.27.1853.1053@1920.0.1920.1080" timestamp="1582829993095" />
+  </component>
+</project>
+>>>>>>> 99887486c75ac2f456ce8fe799ba21fd00fddbff
