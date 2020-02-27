@@ -23,10 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        var_dump('test env vars');
-        var_dump(env('DB_CONNECTION'));
-        var_dump(env('DB_HOST'));
-
         return view('home');
     }
 }
