@@ -16,7 +16,7 @@ class FrameHeadersMiddleware
     public function handle($request, Closure $next)
     {
         $response = $next($request);
-        $response->header('X-Frame-Options', 'ALLOW-FROM http://rentcars-security-app.herokuapp.com');
+        $response->header('X-Frame-Options', 'sameorigin');
         return $response;
     }
 }
