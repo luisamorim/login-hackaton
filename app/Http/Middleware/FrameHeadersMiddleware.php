@@ -18,6 +18,7 @@ class FrameHeadersMiddleware
         $response = $next($request);
         $response->header('X-Frame-Options', 'SAMEORIGIN');
         $response->header('X-XSS-Protection', '1');
+        $response->header('X-Content-Type-Options', 'nosniff');
         return $response;
     }
 }
