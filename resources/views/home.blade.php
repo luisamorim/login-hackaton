@@ -12,7 +12,8 @@
 
                                         <div class="panel-body">
                                             <form class="form-horizontal" method="POST"
-                                                  action="{{ route('register') }}">
+                                                  action="{{ route('putuser', Auth::user()->id ) }}">
+
                                                 {{ csrf_field() }}
 
                                                 <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -21,6 +22,7 @@
                                                     <div class="col-md-6">
                                                         <input id="name" type="text" class="form-control" name="name"
                                                                value="{{ Auth::user()->name }}" required autofocus>
+
                                                         @if ($errors->has('name'))
                                                             <span class="help-block">
                                         <strong>{{ $errors->first('name') }}</strong>
@@ -29,21 +31,6 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                                                    <label for="actualpassword"
-                                                           class="col-md-4 control-label">Actual Password</label>
-
-                                                    <div class="col-md-6">
-                                                        <input id="actualpassword" type="password" class="form-control"
-                                                               name="actualpassword" required>
-
-                                                        @if ($errors->has('password'))
-                                                            <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                                        @endif
-                                                    </div>
-                                                </div>
 
                                                 <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                                                     <label for="password"
@@ -79,6 +66,7 @@
                                                         </button>
                                                     </div>
                                                 </div>
+
                                             </form>
                                         </div>
                                     </div>
