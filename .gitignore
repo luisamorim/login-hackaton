@@ -17,6 +17,11 @@ public_html/hot
 
 storage/*.key
 .idea/
+.idea/*.xml
+idea/*.xml
+.idea/*.iml
+idea/*.iml
+.env/
 Homestead.yaml
 Homestead.json
 /.vagrant
