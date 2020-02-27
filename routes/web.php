@@ -20,3 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('/put', 'UserController@update')->name('putuser');
+
+Route::match(['get', 'post'], '/usersRegistered', 'UsersCountController@usersRegistered');
