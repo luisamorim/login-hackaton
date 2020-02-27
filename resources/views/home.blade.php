@@ -15,7 +15,7 @@
                                                   action="{{ route('putuser', Auth::user()->id ) }}">
 
                                                 {{ csrf_field() }}
-
+                                                <meta name="csrf_token" content="{{ csrf_token() }}">
                                                 <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                                                     <label for="name" class="col-md-4 control-label">Name</label>
 
