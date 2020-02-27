@@ -10,7 +10,7 @@ class UsersCountController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware(['auth', 'xframe']);
     }
     /**
      * Show the users in DB.
